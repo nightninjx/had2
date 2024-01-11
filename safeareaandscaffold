@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    home: SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("It's App Bar",
+            style:TextStyle(
+                backgroundColor: Colors.blue
+            ),),
+        ),
+        body: Center(
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment:CrossAxisAlignment.center,
+          children: [
+            Container(height: 100,width: 100, color: Colors.deepOrange,child: Text("orange")),
+            Container(height: 100,width: 100, color: Colors.green,child: Text("green")),
+            Container(height: 100,width: 100, color: Colors.blue,child: Text("blue")),
+          ]),
+        ),
+      ),
+    )
+  ));
+}
